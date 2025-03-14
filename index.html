@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SampleWebsite</title>
     <link rel="stylesheet" href="style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet"></head>
 <body>
 <nav>
     <img src="freelancer_img/images/logo.png" alt="" class="logo">
@@ -17,6 +19,25 @@
     </ul>
     <button class="nav-btn">Get started <img src="freelancer_img/images/arrow-white.png" alt=""></button>
 </nav>
-    
+<div class="header">
+    <h1>FREE<br>LANCER</h1>
+    <div class="btn-container">
+        <button class="btn-dark">Request call back<img src="freelancer_img/images/phone.png"></button>
+        <button class="btn-light">Know more<img src="freelancer_img/images/arrow-black.png"></button>
+        <p>Passionate UI/UX designers with 10+ years of experience</p>
+        <img src="freelancer_img/images/user.png" class="user-img">
+    </div>
+</div>
+<script>
+    let navbar = document.querySelector('nav')
+    window.onscroll=function(){
+        if(window.scrollY>0){
+            navbar.style.background='#eefff9';
+        }else{
+            navbar.style.background = transparent;
+        }
+    }
+
+</script>
 </body>
 </html>
